@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Milestone_Projects7_9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-lx-faq">
+                                <rect key="frame" x="20" y="89" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Frx-jR-011">
+                                <rect key="frame" x="78" y="221" width="237" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m93-IP-n0w">
+                                <rect key="frame" x="78.666666666666671" y="499" width="72.000000000000014" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Guess"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTU-2l-Ubo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attempts: 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCs-Pj-V8F">
+                                <rect key="frame" x="276" y="89" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iy8-BX-Rbb">
+                                <rect key="frame" x="31" y="295" width="342" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="MJB-vs-BD2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3T-HI-jY0">
+                                <rect key="frame" x="224" y="499" width="91" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Found it!"/>
+                                <connections>
+                                    <action selector="foundWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IcZ-IK-LtS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wl5-lx-faq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="2pK-WQ-HtF"/>
+                            <constraint firstItem="Y3T-HI-jY0" firstAttribute="leading" secondItem="m93-IP-n0w" secondAttribute="trailing" constant="73.333333333333314" id="AqL-GF-gPi"/>
+                            <constraint firstItem="iy8-BX-Rbb" firstAttribute="top" secondItem="Frx-jR-011" secondAttribute="bottom" constant="35.666666666666686" id="Cvp-jp-msR"/>
+                            <constraint firstItem="iy8-BX-Rbb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="MBG-8E-u4x"/>
+                            <constraint firstItem="Frx-jR-011" firstAttribute="trailing" secondItem="Y3T-HI-jY0" secondAttribute="trailing" id="Qve-vx-P7k"/>
+                            <constraint firstItem="Frx-jR-011" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="RRm-cw-lge"/>
+                            <constraint firstItem="lCs-Pj-V8F" firstAttribute="trailing" secondItem="iy8-BX-Rbb" secondAttribute="trailing" id="ViM-Ye-Xjh"/>
+                            <constraint firstItem="Wl5-lx-faq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bFd-W3-W3a"/>
+                            <constraint firstItem="Frx-jR-011" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c87-uv-006"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lCs-Pj-V8F" secondAttribute="trailing" constant="20" id="dsw-Ly-aWT"/>
+                            <constraint firstItem="m93-IP-n0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78.666666666666686" id="eGx-KX-U9B"/>
+                            <constraint firstItem="lCs-Pj-V8F" firstAttribute="leading" secondItem="Wl5-lx-faq" secondAttribute="trailing" constant="192" id="gYr-7l-luS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m93-IP-n0w" secondAttribute="bottom" constant="284" id="ggS-oB-jCf"/>
+                            <constraint firstItem="m93-IP-n0w" firstAttribute="top" secondItem="iy8-BX-Rbb" secondAttribute="bottom" constant="72" id="jhV-Iy-Xzs"/>
+                            <constraint firstItem="m93-IP-n0w" firstAttribute="baseline" secondItem="Y3T-HI-jY0" secondAttribute="baseline" id="mmt-4u-P9A"/>
+                            <constraint firstItem="Wl5-lx-faq" firstAttribute="baseline" secondItem="lCs-Pj-V8F" secondAttribute="baseline" id="x1h-4p-bPx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attemptsLabel" destination="lCs-Pj-V8F" id="q9F-sS-o69"/>
+                        <outlet property="scoreLabel" destination="Wl5-lx-faq" id="8gq-f3-ggS"/>
+                        <outlet property="submitButton" destination="m93-IP-n0w" id="rqz-mx-CkP"/>
+                        <outlet property="usedLettersLabel" destination="iy8-BX-Rbb" id="TJi-Jp-boK"/>
+                        <outlet property="wordText" destination="Frx-jR-011" id="uEE-4L-5bC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
